@@ -10,10 +10,4 @@
 
 @implementation AMLaunchEventManager
 
-+ (void)load {
-    
-}
-
-
-
 @end
