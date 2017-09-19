@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4938C6DD1F715EA100C78FC7 /* AMLaunchEventConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4938C6DC1F715EA100C78FC7 /* AMLaunchEventConfiguration.m */; };
 		4938D1ED1F7009DB002031BE /* AMLauchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4938D1EC1F7009DB002031BE /* AMLauchImage.m */; };
 		4990C5551F6E7C94009F1D74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990C5541F6E7C94009F1D74 /* AppDelegate.m */; };
 		4990C5581F6E7C94009F1D74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990C5571F6E7C94009F1D74 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4938C6DB1F715EA100C78FC7 /* AMLaunchEventConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLaunchEventConfiguration.h; sourceTree = "<group>"; };
+		4938C6DC1F715EA100C78FC7 /* AMLaunchEventConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLaunchEventConfiguration.m; sourceTree = "<group>"; };
 		4938D1EB1F7009DB002031BE /* AMLauchImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLauchImage.h; sourceTree = "<group>"; };
 		4938D1EC1F7009DB002031BE /* AMLauchImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLauchImage.m; sourceTree = "<group>"; };
 		4990C5501F6E7C94009F1D74 /* AMLaunchEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMLaunchEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,8 @@
 			children = (
 				4990C56A1F6E8680009F1D74 /* AMLaunchEvent.h */,
 				4990C56B1F6E8680009F1D74 /* AMLaunchEvent.m */,
+				4938C6DB1F715EA100C78FC7 /* AMLaunchEventConfiguration.h */,
+				4938C6DC1F715EA100C78FC7 /* AMLaunchEventConfiguration.m */,
 				4990C56D1F6E8892009F1D74 /* AMLaunchEventManager.h */,
 				4990C56E1F6E8892009F1D74 /* AMLaunchEventManager.m */,
 				4938D1EB1F7009DB002031BE /* AMLauchImage.h */,
@@ -171,6 +176,7 @@
 				4990C5631F6E7C94009F1D74 /* main.m in Sources */,
 				4938D1ED1F7009DB002031BE /* AMLauchImage.m in Sources */,
 				4990C5551F6E7C94009F1D74 /* AppDelegate.m in Sources */,
+				4938C6DD1F715EA100C78FC7 /* AMLaunchEventConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

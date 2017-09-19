@@ -50,7 +50,7 @@
     window.rootViewController.view.userInteractionEnabled = NO;
     window.windowLevel = UIWindowLevelStatusBar + 1;
     window.hidden = NO;
-    window.alpha = 1;
+    window.alpha = 1.0f;
     self.window = window;
     /** 添加launchImage */
     [self.window addSubview:self.launchImageView];
