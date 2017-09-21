@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4938C6DD1F715EA100C78FC7 /* AMLaunchEventConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 4938C6DC1F715EA100C78FC7 /* AMLaunchEventConfiguration.m */; };
-		4938D1ED1F7009DB002031BE /* AMLauchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4938D1EC1F7009DB002031BE /* AMLauchImage.m */; };
+		4938D1ED1F7009DB002031BE /* AMLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4938D1EC1F7009DB002031BE /* AMLaunchImage.m */; };
+		494E213E1F7404EB004429F4 /* AMLaunchWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 494E213D1F7404EB004429F4 /* AMLaunchWindow.m */; };
 		4990C5551F6E7C94009F1D74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990C5541F6E7C94009F1D74 /* AppDelegate.m */; };
 		4990C5581F6E7C94009F1D74 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990C5571F6E7C94009F1D74 /* ViewController.m */; };
 		4990C55B1F6E7C94009F1D74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4990C5591F6E7C94009F1D74 /* Main.storyboard */; };
@@ -22,8 +23,10 @@
 /* Begin PBXFileReference section */
 		4938C6DB1F715EA100C78FC7 /* AMLaunchEventConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLaunchEventConfiguration.h; sourceTree = "<group>"; };
 		4938C6DC1F715EA100C78FC7 /* AMLaunchEventConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLaunchEventConfiguration.m; sourceTree = "<group>"; };
-		4938D1EB1F7009DB002031BE /* AMLauchImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLauchImage.h; sourceTree = "<group>"; };
-		4938D1EC1F7009DB002031BE /* AMLauchImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLauchImage.m; sourceTree = "<group>"; };
+		4938D1EB1F7009DB002031BE /* AMLaunchImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLaunchImage.h; sourceTree = "<group>"; };
+		4938D1EC1F7009DB002031BE /* AMLaunchImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLaunchImage.m; sourceTree = "<group>"; };
+		494E213C1F7404EB004429F4 /* AMLaunchWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMLaunchWindow.h; sourceTree = "<group>"; };
+		494E213D1F7404EB004429F4 /* AMLaunchWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMLaunchWindow.m; sourceTree = "<group>"; };
 		4990C5501F6E7C94009F1D74 /* AMLaunchEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMLaunchEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4990C5531F6E7C94009F1D74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4990C5541F6E7C94009F1D74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,8 +96,10 @@
 				4938C6DC1F715EA100C78FC7 /* AMLaunchEventConfiguration.m */,
 				4990C56D1F6E8892009F1D74 /* AMLaunchEventManager.h */,
 				4990C56E1F6E8892009F1D74 /* AMLaunchEventManager.m */,
-				4938D1EB1F7009DB002031BE /* AMLauchImage.h */,
-				4938D1EC1F7009DB002031BE /* AMLauchImage.m */,
+				494E213C1F7404EB004429F4 /* AMLaunchWindow.h */,
+				494E213D1F7404EB004429F4 /* AMLaunchWindow.m */,
+				4938D1EB1F7009DB002031BE /* AMLaunchImage.h */,
+				4938D1EC1F7009DB002031BE /* AMLaunchImage.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -174,7 +179,8 @@
 				4990C5581F6E7C94009F1D74 /* ViewController.m in Sources */,
 				4990C56C1F6E8680009F1D74 /* AMLaunchEvent.m in Sources */,
 				4990C5631F6E7C94009F1D74 /* main.m in Sources */,
-				4938D1ED1F7009DB002031BE /* AMLauchImage.m in Sources */,
+				494E213E1F7404EB004429F4 /* AMLaunchWindow.m in Sources */,
+				4938D1ED1F7009DB002031BE /* AMLaunchImage.m in Sources */,
 				4990C5551F6E7C94009F1D74 /* AppDelegate.m in Sources */,
 				4938C6DD1F715EA100C78FC7 /* AMLaunchEventConfiguration.m in Sources */,
 			);

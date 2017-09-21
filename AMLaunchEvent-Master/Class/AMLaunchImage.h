@@ -1,5 +1,5 @@
 //
-//  AMLauchImage.h
+//  AMLaunchImage.h
 //  AMLaunchEvent
 //
 //  Created by AndyMu on 2017/9/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AMLauchImage : UIImage
+@interface AMLaunchImage : UIImage
 
 /**
  Creates and returns a serializer with default LauchImage.

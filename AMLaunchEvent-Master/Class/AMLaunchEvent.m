@@ -7,14 +7,12 @@
 //
 
 #import "AMLaunchEvent.h"
-#import <UIKit/UIKit.h>
-#import "AMLauchImage.h"
-
+#import "AMLaunchImage.h"
+#import "AMLaunchWindow.h"
 
 @interface AMLaunchEvent()
 
-@property (nonatomic, strong) UIWindow *window;
-@property (nonatomic, strong) UIImageView *launchImageView;
+@property (nonatomic, strong) AMLaunchWindow *lauchWindow;
 
 @end
 
@@ -25,7 +23,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        
+        [self setupLaunchEvent];
     }
     return self;
 }
@@ -41,33 +39,19 @@
     return lanchEvent;
 }
 
+#pragma mark - Public Method
+
++(void)setWaitDataDuration:(NSInteger )waitDataDuration type:(AMWaitType)type {
+    
+}
+
 #pragma mark - SetupWindow
 
 - (void)setupLaunchEvent {
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    window.rootViewController = [UIViewController new];
-    window.rootViewController.view.backgroundColor = [UIColor clearColor];
-    window.rootViewController.view.userInteractionEnabled = NO;
-    window.windowLevel = UIWindowLevelStatusBar + 1;
-    window.hidden = NO;
-    window.alpha = 1.0f;
-    self.window = window;
-    /** 添加launchImage */
-    [self.window addSubview:self.launchImageView];
+    [[AMLaunchWindow serializer] addLaunchImage];
 }
-
 
 #pragma mark - Lazy
-
-- (UIImageView *)launchImageView {
-    if (!_launchImageView) {
-        _launchImageView = [[UIImageView alloc]init];
-        _launchImageView.frame = [UIScreen mainScreen].bounds;
-        _launchImageView.userInteractionEnabled = YES;
-        _launchImageView.image = [AMLauchImage serializer];
-    }
-    return _launchImageView;
-}
 
 
 

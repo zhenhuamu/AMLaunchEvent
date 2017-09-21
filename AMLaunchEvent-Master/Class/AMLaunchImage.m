@@ -1,12 +1,12 @@
 //
-//  AMLauchImage.m
+//  AMLaunchImage.m
 //  AMLaunchEvent
 //
 //  Created by AndyMu on 2017/9/18.
 //  Copyright © 2017年 AndyMu. All rights reserved.
 //
 
-#import "AMLauchImage.h"
+#import "AMLaunchImage.h"
 
 static NSString * const kPortrait = @"Portrait";
 static NSString * const kLandscape = @"Landscape";
@@ -15,22 +15,22 @@ static NSString * const kUILaunchImageSize = @"UILaunchImageSize";
 static NSString * const kUILaunchImageOrientation = @"UILaunchImageOrientation";
 static NSString * const kUILaunchImageName = @"UILaunchImageName";
 
-@implementation AMLauchImage
+@implementation AMLaunchImage
 
 + (instancetype)serializer {
     return [[self class] launchImage];
 }
 
-+ (AMLauchImage *)launchImage {
-    AMLauchImage *pImage = [self launchImageWithType:kPortrait];
++ (AMLaunchImage *)launchImage {
+    AMLaunchImage *pImage = [self launchImageWithType:kPortrait];
     if(pImage) return pImage;
-    AMLauchImage *lImage = [self launchImageWithType:kLandscape];
+    AMLaunchImage *lImage = [self launchImageWithType:kLandscape];
     if(lImage) return lImage;
     NSAssert(NO, @"%s LaunchImage is nil ", __func__);
     return nil;
 }
 
-+ (AMLauchImage *)launchImageWithType:(NSString *)type {
++ (AMLaunchImage *)launchImageWithType:(NSString *)type {
     CGSize viewSize = [UIScreen mainScreen].bounds.size;
     NSString *viewOrientation = type;
     NSString *launchImageName = nil;
@@ -43,7 +43,7 @@ static NSString * const kUILaunchImageName = @"UILaunchImageName";
             }
             if(CGSizeEqualToSize(imageSize, viewSize)) {
                 launchImageName = dict[kUILaunchImageName];
-                AMLauchImage *image = (AMLauchImage *)[UIImage imageNamed:launchImageName];
+                AMLaunchImage *image = (AMLaunchImage *)[UIImage imageNamed:launchImageName];
                 return image;
             }
         }

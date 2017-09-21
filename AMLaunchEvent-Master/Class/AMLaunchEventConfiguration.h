@@ -10,10 +10,5 @@
 
 @interface AMLaunchEventConfiguration : NSObject
 
-/**
- 等待请求相应时间(默认 1S)
- */
-@property (nonatomic, assign) NSUInteger waitResponseDuration;
-
 
 @end
