@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedManager;
 
+- (void)setupAMLaunchEvent;
+
 @end
 
 NS_ASSUME_NONNULL_END

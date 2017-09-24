@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AMLaunchEventManager.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,12 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[AMLaunchEventManager sharedManager] setupAMLaunchEvent];
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

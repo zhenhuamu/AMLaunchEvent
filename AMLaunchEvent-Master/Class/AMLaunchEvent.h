@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AMLaunchEventConfiguration.h"
+
+@class AMLaunchWindow;
 
 /**
  *  等待请求相应事件
@@ -27,9 +30,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AMLaunchEvent : NSObject
 
 /**
- *  设置等待请求相应时间(default 1)
+ *  设置等待请求相应时间(default 1S)
  */
-+(void)setWaitResponceDuration:(NSInteger )waitResponceDuration type:(AMWaitType)type;
++ (AMLaunchEvent *)setWaitResponceDuration:(NSUInteger )waitResponceDuration type:(AMWaitType)type;
+
+/**
+ *  展示活动图片相关
+ */
++ (AMLaunchEvent *)showEventWithEventConfiguration:(AMLaunchEventConfiguration *)eventConfiguration;
+
 
 @end
 

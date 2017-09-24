@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface AMLaunchImage : UIImage
 
 /**
@@ -18,5 +16,3 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)serializer;
 
 @end
-
-NS_ASSUME_NONNULL_END
